@@ -6,7 +6,8 @@ import ReactGA from "react-ga";
 
 
 function initializeReactGA() {
-    ReactGA.initialize('GA CODE');
+    ReactGA.initialize('GA0123123');
+    ReactGA.set({ userId: 123 });
     ReactGA.pageview('/');
     ReactGA.pageview('/page1');
     ReactGA.pageview('/page2');
