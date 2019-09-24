@@ -1,4 +1,10 @@
 import React from 'react';
+import ReactGA from 'react-ga';
+
+function initializeReactGA() {
+    ReactGA.initialize('HERE THE CODE');
+    ReactGA.pageview('/');
+}
 
 function App() {
   return (
@@ -7,5 +13,7 @@ function App() {
     </div>
   );
 }
+
+initializeReactGA();
 
 export default App;
